@@ -3,7 +3,8 @@ import '../Styles/headingWithBg.scss';
 const HeadingWithBg = () => {
   return (
     <div className='text-container'>
-      <h2 className='text'>Lennart Jansen</h2>;
+      <span className='text rotate-1'>Lennart</span>
+      <span className='text rotate-2'>Jansen</span>
     </div>
   );
 };
