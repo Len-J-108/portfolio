@@ -1,0 +1,41 @@
+.text-container {
+}
+
+@font-face {
+  font-family: 'Valko Capela';
+  src: url('../Assets/fonts/VALKOCAPELARegular.ttf') format('truetype');
+}
+
+.text {
+  font-size: 100px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-family: 'Valko Capela';
+  color: rgba(225, 225, 225, 0);
+  background-image: url('../Assets/images/textBg/jellyfish-4497496.jpg');
+  // background-image: url('../Assets/images/textBg/theater-432045.jpg');
+  // background-image: url('../Assets/images/textBg/cloth-3672088.jpg');
+  background-size: auto;
+  // background-position: center;
+  // background-repeat: repeat;
+  -webkit-background-clip: text; // INFO: needs to be with webkit!!
+  text-transform: uppercase;
+  background-repeat: repeat;
+  animation: text-bg 60s ease-in-out infinite;
+}
+
+@keyframes text-bg {
+  0%,
+  100% {
+    background-position: left top;
+  }
+  25% {
+    background-position: right bottom;
+  }
+  50% {
+    background-position: left bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+}
