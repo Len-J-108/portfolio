@@ -1,7 +1,36 @@
 .text-container {
-  filter: blur(5px);
+  filter: blur(4px);
   // filter: grayscale(1);
   perspective: 1200px;
+
+  position: relative;
+}
+
+.wheel {
+  z-index: -3;
+  width: 150px;
+  height: 150px;
+  // border-radius: 50%;
+  border: 8px solid orange;
+  // background-color: rgba(255, 165, 0, .4);
+  background-image: url('../Assets/images/enterAnimationBg/thunder-4963719.jpg');
+  background-size: cover;
+  box-shadow: 2px 2px 5px 3px gray;
+  position: absolute;
+  left: 500px;
+  // background: inherit;
+  // transform: rotateY(490deg);
+  // transform: rotate(80deg);
+  // transform: translateX(-300px);
+  // animation: rotate(90deg) 3s;
+  // transition: transform 2s;
+  animation: rotater 80s linear infinite;
+}
+
+@keyframes rotater {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @font-face {
