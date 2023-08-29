@@ -1,3 +1,4 @@
+import { BrowserRouter } from 'react-router-dom';
 import '../Styles/Components/Content.scss';
 import ContentLeft from './ContentLeft';
 import ContentRight from './ContentRight';
@@ -10,9 +11,11 @@ const Content = ({ color }) => {
   };
   return (
     <div className='content-wrapper' style={style}>
-      <Navigation />
-      <ContentLeft color={'green'} />
-      <ContentRight color={'yellow'} />
+      <BrowserRouter>
+        <Navigation />
+        <ContentLeft color={'green'} />
+        <ContentRight color={'yellow'} />
+      </BrowserRouter>
     </div>
   );
 };

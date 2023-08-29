@@ -1,14 +1,23 @@
-import TestPageOne from './TestPageOne';
-import '../Styles/Components/ContentRight.scss'
+// import TestPageOne from './TestPageOne';
+// import TestPageTwo from './TestPageTwo';
+// import TestPageThree from './TestPageThree';
+import '../Styles/Components/ContentRight.scss';
+// import { Route, Routes, useLocation } from 'react-router-dom';
+// import { AnimatePresence } from 'framer-motion';
+import LocationProvider from './LocationProvider';
+import RoutesAnimated from './RoutesAnimated';
 
 const ContentRight = ({ color }) => {
   const style = {
     color: color,
     border: `2px solid ${color}`,
   };
+
   return (
     <div className='content-right-wrapper' style={style}>
-      {/* <TestPageOne /> */}
+      <LocationProvider>
+        <RoutesAnimated />
+      </LocationProvider>
     </div>
   );
 };

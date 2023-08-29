@@ -1,4 +1,4 @@
-import '../Styles/headingWithBg.scss';
+import '../Styles/Components/headingWithBg.scss';
 
 const HeadingWithBg = () => {
   return (

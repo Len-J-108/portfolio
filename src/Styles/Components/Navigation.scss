@@ -1,6 +1,16 @@
 .nav-component {
-    background-color: white;
-    // width: 100%;
-    height: 50px;
-    grid-area: 1 / 1 / 2 / 10;
+  background-color: pink;
+  height: 50px;
+  grid-area: 1 / 1 / 2 / 10;
+  display: flex;
 }
+
+.idiot {
+    // margin-inline: 15px;
+  margin: auto 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 7px;
+  box-shadow: -2px 4px 16px 5px rgba(0,0,0,0.56);
+}
+
