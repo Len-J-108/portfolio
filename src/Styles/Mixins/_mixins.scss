@@ -1,0 +1,16 @@
+@mixin wire1 {
+  width: 87vw;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin wireTwo {
+  width: 50%;
+  height: 600px;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

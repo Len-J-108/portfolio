@@ -1,0 +1,5 @@
+@import '../Mixins/mixins';
+
+.content-left-wrapper {
+  @include wireTwo;
+}
