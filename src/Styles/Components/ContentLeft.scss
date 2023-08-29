@@ -2,4 +2,5 @@
 
 .content-left-wrapper {
   @include wireTwo;
+  grid-area: 2 / 1 / 10 / 5;
 }

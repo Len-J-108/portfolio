@@ -1,15 +1,14 @@
 @mixin wire1 {
   width: 87vw;
   height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  margin: 0;
 }
 
 @mixin wireTwo {
-  width: 50%;
-  height: 600px;
-  margin: 1rem;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;

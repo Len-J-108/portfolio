@@ -1,4 +1,5 @@
 import TestPageOne from './TestPageOne';
+import '../Styles/Components/ContentRight.scss'
 
 const ContentRight = ({ color }) => {
   const style = {
@@ -6,8 +7,8 @@ const ContentRight = ({ color }) => {
     border: `2px solid ${color}`,
   };
   return (
-    <div className='content-left-wrapper' style={style}>
-      <TestPageOne />
+    <div className='content-right-wrapper' style={style}>
+      {/* <TestPageOne /> */}
     </div>
   );
 };

@@ -1,0 +1,6 @@
+@import '../Mixins/mixins';
+
+.content-right-wrapper {
+  @include wireTwo;
+  grid-area: 2 / 5 / 10 / 10;
+}

@@ -1,6 +1,7 @@
 import '../Styles/Components/Content.scss';
 import ContentLeft from './ContentLeft';
 import ContentRight from './ContentRight';
+import Navigation from './Navigation';
 
 const Content = ({ color }) => {
   const style = {
@@ -9,8 +10,9 @@ const Content = ({ color }) => {
   };
   return (
     <div className='content-wrapper' style={style}>
-          <ContentLeft color={'green'} />
-          <ContentRight color={ 'yellow'} />
+      <Navigation />
+      <ContentLeft color={'green'} />
+      <ContentRight color={'yellow'} />
     </div>
   );
 };
