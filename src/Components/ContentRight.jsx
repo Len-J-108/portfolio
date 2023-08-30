@@ -6,6 +6,7 @@ import '../Styles/Components/ContentRight.scss';
 // import { AnimatePresence } from 'framer-motion';
 import LocationProvider from './LocationProvider';
 import RoutesAnimated from './RoutesAnimated';
+// import { AnimatePresence } from 'framer-motion';
 
 const ContentRight = ({ color }) => {
   const style = {
@@ -15,9 +16,11 @@ const ContentRight = ({ color }) => {
 
   return (
     <div className='content-right-wrapper' style={style}>
-      <LocationProvider>
-        <RoutesAnimated />
-      </LocationProvider>
+      {/* <AnimatePresence> */}
+        <LocationProvider>
+          <RoutesAnimated />
+        </LocationProvider>
+      {/* </AnimatePresence> */}
     </div>
   );
 };

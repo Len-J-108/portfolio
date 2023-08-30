@@ -15,16 +15,26 @@ const TestPageOne = () => {
       opacity: '0',
       width: '1px',
       transition: {
-        duration: '1',
-        delay: '.1',
+        ease: 'linear',
+        // duration: '1',
+        // delay: '.1',
       },
     },
     final: {
       opacity: '1',
       width: '100%',
       transition: {
+        ease: 'linear',
         duration: '1',
-        delay: '.1',
+        // delay: '.1',
+      },
+    },
+    end: {
+      width: 0,
+      transition: {
+        ease: 'linear',
+        duration: '.1',
+        // delay: '.1',
       },
     },
   };
@@ -33,7 +43,7 @@ const TestPageOne = () => {
       variants={animateProps}
       initial='initial'
       animate='final'
-      exit='intial'
+      exit='end'
       style={style}
     >
       TestPageOne
