@@ -9,41 +9,25 @@ const TestPageOne = () => {
     justifyContent: 'center',
     alignItems: 'center',
   };
+  // const animateProps = {
+  //   initial: {
+  //     opacity: '0',
+  //     transition: {},
+  //   },
+  //   final: {
+  //     opacity: '1',
+  //     transition: {
+  //       duration: '1',
+  //     },
+  //   },
+  // };
 
-  const animateProps = {
-    initial: {
-      opacity: '0',
-      width: '1px',
-      transition: {
-        ease: 'linear',
-        // duration: '1',
-        // delay: '.1',
-      },
-    },
-    final: {
-      opacity: '1',
-      width: '100%',
-      transition: {
-        ease: 'linear',
-        duration: '1',
-        // delay: '.1',
-      },
-    },
-    end: {
-      width: 0,
-      transition: {
-        ease: 'linear',
-        duration: '.1',
-        // delay: '.1',
-      },
-    },
-  };
   return (
     <motion.div
-      variants={animateProps}
-      initial='initial'
-      animate='final'
-      exit='end'
+      // variants={animateProps}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       style={style}
     >
       TestPageOne

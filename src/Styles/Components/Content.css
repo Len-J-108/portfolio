@@ -1,0 +1,8 @@
+.content-wrapper {
+  width: 87vw;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  margin: 0;
+}/*# sourceMappingURL=Content.css.map */

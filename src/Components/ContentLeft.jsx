@@ -1,6 +1,6 @@
 import '../Styles/Components/ContentLeft.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import PureCarousel from './PureCarousel';
+
+import CarouselBS from './CarouselBS';
 
 const ContentLeft = ({ color }) => {
   const style = {
@@ -9,7 +9,7 @@ const ContentLeft = ({ color }) => {
   };
   return (
     <div className='content-left-wrapper' style={style}>
-      <PureCarousel />
+      <CarouselBS />
     </div>
   );
 };

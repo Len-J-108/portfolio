@@ -1,35 +1,6 @@
 import { motion } from 'framer-motion';
 
 const TestPageThree = () => {
-  const animateProps = {
-    initial: {
-      opacity: '0',
-      width: '1px',
-      transition: {
-        ease: 'linear',
-        // duration: '1',
-        // delay: '.1',
-      },
-    },
-    final: {
-      opacity: '1',
-      width: '100%',
-      transition: {
-        ease: 'linear',
-        duration: '1',
-        // delay: '.1',
-      },
-    },
-    end: {
-      width: 0,
-      transition: {
-        ease: 'linear',
-        duration: '.1',
-        // delay: '.1',
-      },
-    },
-  };
-
   const style = {
     background: 'linear-gradient(to top, #a80077, #66ff00)',
     width: '100%',
@@ -38,12 +9,28 @@ const TestPageThree = () => {
     justifyContent: 'center',
     alignItems: 'center',
   };
+
+  // const animateProps = {
+  //   initial: {
+  //     opacity: '0',
+  //     transition: {
+  //       duration: '1',
+  //     },
+  //   },
+  //   final: {
+  //     opacity: '1',
+  //     transition: {
+  //       duration: '1',
+  //     },
+  //   },
+  // };
+
   return (
     <motion.div
-      variants={animateProps}
-      initial='initial'
-      animate='final'
-      exit='end'
+      // variants={animateProps}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       style={style}
     >
       TestPageThree
