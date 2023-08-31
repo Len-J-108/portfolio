@@ -2,8 +2,8 @@ import testImageOne from '../Assets/images/carouselLeft/test/lightning-2222412.j
 import testImageTwo from '../Assets/images/carouselLeft/test/thunder-4963719.jpg';
 import testImageThree from '../Assets/images/carouselLeft/test/thunderstorm-4375844.jpg';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import Carousel from 'react-bootstrap/Carousel';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
