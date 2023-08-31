@@ -16,11 +16,9 @@ const ContentRight = ({ color }) => {
 
   return (
     <div className='content-right-wrapper' style={style}>
-      {/* <AnimatePresence> */}
         <LocationProvider>
           <RoutesAnimated />
         </LocationProvider>
-      {/* </AnimatePresence> */}
     </div>
   );
 };

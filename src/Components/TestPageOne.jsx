@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const TestPageOne = () => {
+const TestPageOne = ({ switchProps }) => {
   const style = {
     background: 'linear-gradient(to right, #2196f3, #f44336)',
     width: '100%',
@@ -9,25 +9,13 @@ const TestPageOne = () => {
     justifyContent: 'center',
     alignItems: 'center',
   };
-  // const animateProps = {
-  //   initial: {
-  //     opacity: '0',
-  //     transition: {},
-  //   },
-  //   final: {
-  //     opacity: '1',
-  //     transition: {
-  //       duration: '1',
-  //     },
-  //   },
-  // };
 
   return (
     <motion.div
-      // variants={animateProps}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      variants={switchProps}
+      initial='initial'
+      animate='final'
+      exit='exit'
       style={style}
     >
       TestPageOne
