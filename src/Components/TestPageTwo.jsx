@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const TestPageTwo = ({switchProps}) => {
+const TestPageTwo = ({ switchProps }) => {
   const style = {
     background: 'linear-gradient(to top, #ff4b1f, #ff9068)',
     width: '100%',
@@ -10,17 +10,17 @@ const TestPageTwo = ({switchProps}) => {
     alignItems: 'center',
   };
 
-    return (
-      <motion.div
-        variants={switchProps}
-        initial='initial'
-        animate='final'
-        exit='exit'
-        style={style}
-      >
-        TestPageThree
-      </motion.div>
-    );
+  return (
+    <motion.div
+      variants={switchProps}
+      initial='initial'
+      animate='final'
+      exit='exit'
+      style={style}
+    >
+      TestPageThree
+    </motion.div>
+  );
 };
 
 export default TestPageTwo;

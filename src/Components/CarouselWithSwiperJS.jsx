@@ -1,5 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import '../Styles/Layout/grid.scss';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -14,7 +15,7 @@ export default function CarouselWithSwiperJS() {
   const imageStyles = ['object-fill', 'w-full', 'aspect-video', 'grayscale'];
 
   return (
-    <>
+    <div className='carousel-grid'>
       <Swiper
         spaceBetween={30}
         speed={5000}
@@ -50,6 +51,6 @@ export default function CarouselWithSwiperJS() {
           />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }

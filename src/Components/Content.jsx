@@ -1,20 +1,19 @@
 import { BrowserRouter } from 'react-router-dom';
-import '../Styles/Components/Content.scss';
-import ContentLeft from './ContentLeft';
 import ContentRight from './ContentRight';
 import Navigation from './Navigation';
+import ContentLeftBottom from './ContentLeftBottom';
+import CarouselWithSwiperJS from './CarouselWithSwiperJS';
+import '../Styles/Layout/grid.scss';
 
-const Content = ({ color }) => {
-  const style = {
-    color: color,
-    border: `2px solid ${color}`,
-  };
+const Content = () => {
+
   return (
-    <div className='content-wrapper' style={style}>
+    <div className='grid-container'>
       <BrowserRouter>
         <Navigation />
-        <ContentLeft color={'green'} />
-        <ContentRight color={'yellow'} />
+        <CarouselWithSwiperJS />
+        <ContentLeftBottom />
+        <ContentRight />
       </BrowserRouter>
     </div>
   );
