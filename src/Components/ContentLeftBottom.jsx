@@ -1,9 +1,11 @@
-import '../Styles/Layout/grid.scss';
+import '../Styles/Layout/flex.scss';
 
 const ContentLeftBottom = () => {
   const twClassNames = [
     'bg-lime-200',
-    'bg-opacity-50',
+    'hidden',
+    'lg:block',
+    // 'bg-opacity-50',
     // 'md:flex',
     // 'sm:hidden',
   ];

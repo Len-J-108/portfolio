@@ -1,6 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import '../Styles/Layout/grid.scss';
+import '../Styles/Layout/flex.scss';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -18,7 +18,7 @@ export default function CarouselWithSwiperJS() {
   const imageStyles = ['h-full', 'w-full', 'object-cover'];
 
   return (
-    <div className='carousel-grid md:flex sm:hidden'>
+    <div className='carousella hidden lg:block'>
       <Swiper
         spaceBetween={30}
         speed={3000}

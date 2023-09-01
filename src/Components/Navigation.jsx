@@ -1,24 +1,17 @@
 import { Link } from 'react-router-dom';
-import '../Styles/Components/Navigation.scss';
-import '../Styles/Layout/grid.scss';
+import '../Styles/Layout/flex.scss';
+
 
 const Navigation = () => {
-
-  const twClassNames = [
-    'nav-container',
-    'nav-component',
-    // 'md:flex',
-    // 'sm:hidden',
-  ]
   return (
-    <nav className={ twClassNames.join(' ')}>
-      <Link to='/' className='idiot'>
+    <nav className='navigation flex flex-row lg:flex-col bg-cyan-900'>
+      <Link to='/' className='drop-shadow-md m-auto border-2 rounded-md p-2 bg-orange-950'>
         TestOne
       </Link>
-      <Link to='/two' className='idiot'>
+      <Link to='/two' className='drop-shadow-md m-auto border-2 rounded-md p-2 bg-orange-950'>
         TestTwo
       </Link>
-      <Link to='three' className='idiot'>
+      <Link to='three' className='drop-shadow-md m-auto border-2 rounded-md p-2 bg-orange-950'>
         TestThree
       </Link>
     </nav>

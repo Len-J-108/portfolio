@@ -1,0 +1,54 @@
+.content-container {
+  height: 500px;
+  align-items: stretch;
+}
+
+.carousella {
+  width: 300px;
+  height: 500px;
+  order: 1;
+}
+
+.content-left-bottom {
+  width: 300px;
+  height: 320px;
+  order: 2;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  opacity: 0.5;
+  border-top-right-radius: 50%;
+  // border-top-left-radius: 50%;
+  border-top-right-radius: 300px;
+}
+
+.item-content-right {
+  width: 500px;
+  order: 3;
+}
+
+.navigation {
+  width: 80px;
+  order: 4;
+}
+
+//Breakpoints
+
+@media (max-width: 1000px) {
+  .content-container {
+    height: 80vh;
+    flex-direction: column;
+    // justify-content:stretch
+  }
+
+  .navigation {
+    width: 80vw;
+    order: 3;
+  }
+
+  .item-content-right {
+    width: 80vw;
+    height: 70vh;
+    order: 4;
+  }
+}

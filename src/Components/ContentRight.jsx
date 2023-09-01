@@ -1,14 +1,10 @@
-import '../Styles/Layout/grid.scss';
+import '../Styles/Layout/flex.scss';
 import LocationProvider from './LocationProvider';
 import RoutesAnimated from './RoutesAnimated';
 
 const ContentRight = () => {
-  const twClassNames = [
-   
- ] 
-
   return (
-    <div className='content-right'>
+    <div className="item-content-right">
       <LocationProvider>
         <RoutesAnimated />
       </LocationProvider>

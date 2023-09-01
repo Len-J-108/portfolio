@@ -1,12 +1,19 @@
 import '../Styles/app.scss';
-import Content from './Content';
+import ContentLeftBottom from './ContentLeftBottom';
+import CarouselWithSwiperJS from './CarouselWithSwiperJS';
+import ContentRight from './ContentRight';
+import Navigation from './Navigation';
+import '../Styles/Layout/flex.scss';
 
 function App() {
   return (
-    <div className='app'>
-      <div>
+    <div className='w-screen h-screen flex justify-center items-center'>
+      <div className='content-container flex relative'>
+        <CarouselWithSwiperJS />
+        <ContentLeftBottom />
+        <ContentRight />
+        <Navigation />
       </div>
-      <Content color={'red'} />
     </div>
   );
 }
