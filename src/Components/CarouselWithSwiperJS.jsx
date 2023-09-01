@@ -18,7 +18,7 @@ export default function CarouselWithSwiperJS() {
   const imageStyles = ['h-full', 'w-full', 'object-cover'];
 
   return (
-    <div className='carousel-grid'>
+    <div className='carousel-grid md:flex sm:hidden'>
       <Swiper
         spaceBetween={30}
         speed={3000}

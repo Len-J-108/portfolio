@@ -3,8 +3,15 @@ import '../Styles/Components/Navigation.scss';
 import '../Styles/Layout/grid.scss';
 
 const Navigation = () => {
+
+  const twClassNames = [
+    'nav-container',
+    'nav-component',
+    // 'md:flex',
+    // 'sm:hidden',
+  ]
   return (
-    <nav className='nav-container nav-component'>
+    <nav className={ twClassNames.join(' ')}>
       <Link to='/' className='idiot'>
         TestOne
       </Link>

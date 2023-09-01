@@ -3,7 +3,9 @@ import LocationProvider from './LocationProvider';
 import RoutesAnimated from './RoutesAnimated';
 
 const ContentRight = () => {
-
+  const twClassNames = [
+   
+ ] 
 
   return (
     <div className='content-right'>

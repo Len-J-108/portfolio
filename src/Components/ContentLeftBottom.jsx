@@ -1,8 +1,15 @@
 import '../Styles/Layout/grid.scss';
 
 const ContentLeftBottom = () => {
-  const twClassNames = ['content-left-bottom', 'bg-lime-200', 'bg-opacity-50'];
-  return <div className={twClassNames.join(' ')}></div>;
+  const twClassNames = [
+    'bg-lime-200',
+    'bg-opacity-50',
+    // 'md:flex',
+    // 'sm:hidden',
+  ];
+  return (
+    <div className={twClassNames.join(' ') + ' content-left-bottom'}></div>
+  );
 };
 
 export default ContentLeftBottom;
