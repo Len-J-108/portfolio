@@ -28,9 +28,9 @@ const RoutesAnimated = () => {
       },
     },
     exit: {
-      // opacity: 0,
+      opacity: 0,
       // width: 0,
-      height: 0,
+      // height: 0,
       transition: {
         duration: 0.5,
         delay: 0,
