@@ -4,6 +4,7 @@ import CarouselWithSwiperJS from './CarouselWithSwiperJS';
 import ContentRight from './ContentRight';
 import Navigation from './Navigation';
 import '../Styles/Layout/flex.scss';
+import Test from './Test';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <ContentLeftBottom />
         <ContentRight />
         <Navigation />
+        {/* <Test /> */}
       </div>
     </div>
   );
