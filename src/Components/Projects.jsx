@@ -28,7 +28,7 @@ const Projects = ({ switchProps }) => {
       animate='final'
       exit='exit'
       // style={style}
-      className='bg-indigo-950 w-full h-full border-2 border-orange-200 rounded-lg flex items-center flex-col gap-6 overflow-y-scroll'
+      className='bg-neutral-800 w-full h-full rounded-lg flex items-center flex-col gap-6 overflow-y-scroll'
     >
       <h1>My Projects</h1>
       {projectData.map(({ id, name, url, txt, img }) => {
@@ -36,16 +36,6 @@ const Projects = ({ switchProps }) => {
           <ProjectCard name={name} url={url} txt={txt} key={id} img={img} />
         );
       })}
-      {/* <ProjectCard
-        name='Happy Alpaca Page'
-        url='https://len-j-108.github.io/tha-site/'
-        img={img1}
-      />
-      <ProjectCard
-        name='Github Profile Viewer'
-        url='https://len-j-108.github.io/ghProfileViewer/'
-        img={img2}
-      /> */}
     </motion.div>
   );
 };
