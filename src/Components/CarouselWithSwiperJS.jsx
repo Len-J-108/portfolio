@@ -18,7 +18,7 @@ export default function CarouselWithSwiperJS() {
   const imageStyles = ['h-full', 'w-full', 'object-cover'];
 
   return (
-    <div className='carousella hidden lg:block'>
+    <div className='carousella hidden lg:block '>
       <Swiper
         spaceBetween={30}
         speed={3000}

@@ -1,18 +1,28 @@
 import { Link } from 'react-router-dom';
 import '../Styles/Layout/flex.scss';
-
+import Logo from './Logo';
 
 const Navigation = () => {
   return (
-    <nav className='navigation flex flex-row lg:flex-col bg-cyan-900'>
-      <Link to='/' className='drop-shadow-md m-auto border-2 rounded-md p-2 bg-orange-950'>
+    <nav className='navigation flex flex-row lg:flex-col bg-orange-200'>
+      <Logo />
+      <Link
+        to='/'
+        className='m-auto hover:bg-gray-100 text-gray-200 py-2 px-4 border border-gray-400 rounded shadow bg-gray-800'
+      >
         TestOne
       </Link>
-      <Link to='/two' className='drop-shadow-md m-auto border-2 rounded-md p-2 bg-orange-950'>
+      <Link
+        to='/two'
+        className='m-auto hover:bg-gray-100 text-gray-200  py-2 px-4 border border-gray-400 rounded shadow bg-gray-800'
+      >
         TestTwo
       </Link>
-      <Link to='three' className='drop-shadow-md m-auto border-2 rounded-md p-2 bg-orange-950'>
-        TestThree
+      <Link
+        to='projects'
+        className='m-auto hover:bg-gray-100 text-gray-200 py-2 px-4 border border-gray-400 rounded shadow bg-gray-800'
+      >
+        Projects
       </Link>
     </nav>
   );

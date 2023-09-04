@@ -1,0 +1,56 @@
+.initials {
+  font-family: 'Libre Baskerville';
+  // font-family: 'Josefin Sans';
+  // font-family: 'heneczek';
+  //   font-family: 'Valko Capela';
+  position: relative;
+
+  font-size: 80px;
+  width: 100px;
+  height: 100px;
+  background: #108dc7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ef8e38,
+    #108dc7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    45deg,
+    #108dc7,
+    #ef8e38
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // &:nth-child(odd) {
+  // font-size: 12px;
+  // }
+
+  // border: 2px solid black;
+
+  & :nth-child(odd) {
+    // position: absolute;
+  }
+}
+
+.initial {
+  font-size: 50px;
+  font-weight: 700;
+  background: inherit;
+  text-shadow: 11px 14px 11px rgba(0, 0, 0, 0.5);
+}
+
+.i-one {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.i-two {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
