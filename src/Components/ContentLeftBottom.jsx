@@ -1,4 +1,5 @@
 import '../Styles/Layout/flex.scss';
+import '../Styles/Typo/Fonts.scss';
 import { VscGithub } from 'react-icons/vsc';
 import { SiLinkedin } from 'react-icons/si';
 import { BsDiscord } from 'react-icons/bs';
@@ -10,6 +11,7 @@ const ContentLeftBottom = () => {
         <div className='text-black self-start absolute left-0 rounded-full border border-black w-16 h-16'>
           Photo
         </div>
+        <h5 className="fff-bodoni self-center text-2xl text-neutral-800">Frontend Developer</h5>
         <a href='https://github.com/Len-J-108' target='blank'>
           <VscGithub className='text-black text-3xl' />
         </a>
