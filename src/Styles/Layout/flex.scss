@@ -34,26 +34,32 @@
   // width: 80px;
   padding: 0 10px;
   order: 4;
+  z-index: 10;
 }
 
 .depth1 {
-  background-color: rgba(235, 197, 126, 0.4);
+  background-image: linear-gradient(45deg, rgb(2, 2, 5) 60%, hsla(348, 100%, 76%, 0.4) 100%);
   position: absolute;
   width: 450px;
   height: 600px;
-  top: -12px;
+  top: -22px;
   left: 12px;
   border-top-left-radius: 3px;
   border-top-right-radius: 15px;
-
-  background-image: linear-gradient(
-    35deg,
-
-    hsla(40, 73%, 17%, 0.04) 72%,
-    hsla(54, 16%, 49%, 0.04) 100%
-  );
 }
 
+
+.depth3 {
+  background-image: linear-gradient(45deg, rgb(2, 2, 5) 85%, hsla(348, 93%, 83%, 0.4) 100%);
+  position: absolute;
+  width: 100px;
+  height: 600px;
+  bottom: 20px;
+  right: -20px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 15px;
+  z-index: 0;
+}
 //Breakpoints
 
 @media (max-width: 1000px) {
