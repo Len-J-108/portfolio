@@ -1,8 +1,9 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import TestPageOne from './TestPageOne';
-import TestPageTwo from './TestPageTwo';
+import TestPageTwo from './Abilities';
 import TestPageThree from './Projects';
 import { AnimatePresence } from 'framer-motion';
+import Abilities from './Abilities';
 
 const RoutesAnimated = () => {
   const location = useLocation();
@@ -44,8 +45,8 @@ const RoutesAnimated = () => {
       <Routes location={location} key={location.key}>
         <Route path='/' element={<TestPageOne switchProps={switchProps} />} />
         <Route
-          path='/two'
-          element={<TestPageTwo switchProps={switchProps} />}
+          path='/abilities'
+          element={<Abilities switchProps={switchProps} />}
         />
         <Route
           path='/projects'

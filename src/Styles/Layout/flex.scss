@@ -28,6 +28,8 @@
 .item-content-right {
   width: 700px;
   order: 3;
+  z-index: 10;
+
 }
 
 .navigation {
@@ -81,6 +83,12 @@
   }
 
   .depth1 {
+    width: 80vw;
+
+    z-index: 0;
+  }
+
+  .depth3 {
     display: none;
   }
 }

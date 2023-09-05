@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 import img1 from '../Assets/images/cardOneImgSmall.png';
 import img2 from '../Assets/images/cardTwoImgSmall.png';
+import '../Styles/Typo/Fonts.scss';
 
 const Projects = ({ switchProps }) => {
   const projectData = [
@@ -30,7 +31,7 @@ const Projects = ({ switchProps }) => {
       // style={style}
       className='bg-neutral-800 w-full h-full rounded-lg flex items-center flex-col gap-6 overflow-y-scroll'
     >
-      <h1>My Projects</h1>
+      <h1 className="fff-bodoni text-3xl my-8">My Projects</h1>
       {projectData.map(({ id, name, url, txt, img }) => {
         return (
           <ProjectCard name={name} url={url} txt={txt} key={id} img={img} />
