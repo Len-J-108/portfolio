@@ -16,7 +16,7 @@ const Navigation = ({loader}) => {
     >
       <Logo />
       <Link
-        to='/'
+        to='/about'
         className='w-5/6  m-auto hover:text-orange-400 text-center hover: hover:border-orange-400 text-gray-200 py-2 border border-gray-400 rounded shadow bg-inherit'
       >
         About

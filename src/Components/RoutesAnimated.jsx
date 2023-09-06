@@ -3,6 +3,7 @@ import Projects from './Projects';
 import { AnimatePresence } from 'framer-motion';
 import Abilities from './Abilities';
 import About from './About';
+import GreenStart from './GreenStart';
 
 const RoutesAnimated = () => {
   const location = useLocation();
@@ -43,17 +44,18 @@ const RoutesAnimated = () => {
 
   return (
     // <AnimatePresence>
-      <Routes location={location} key={location.key}>
-        <Route path='/' element={<About switchProps={switchProps} />} />
-        <Route
-          path='/abilities'
-          element={<Abilities switchProps={switchProps} />}
-        />
-        <Route
-          path='/projects'
-          element={<Projects switchProps={switchProps} />}
-        />
-      </Routes>
+    <Routes location={location} key={location.key}>
+      <Route path='/' element={<GreenStart switchProps={switchProps} />} />
+      <Route path='/about' element={<About switchProps={switchProps} />} />
+      <Route
+        path='/abilities'
+        element={<Abilities switchProps={switchProps} />}
+      />
+      <Route
+        path='/projects'
+        element={<Projects switchProps={switchProps} />}
+      />
+    </Routes>
     // </AnimatePresence>
   );
 };

@@ -7,6 +7,8 @@ import '../Styles/Layout/flex.scss';
 
 import { AnimatePresence } from 'framer-motion';
 
+import { motion } from 'framer-motion';
+
 function App() {
   const fadeOnLoadLeft = {
     initial: {
@@ -48,7 +50,12 @@ function App() {
           <CarouselWithSwiperJS loader={fadeOnLoadTop} />
           <ContentLeftBottom loader={fadeOnLoadLeft} />
           <ContentRight />
-          <div className='depth3'></div>
+          <motion.div
+            variants={fadeOnLoadTop}
+            initial='initial'
+            animate='final'
+            className='depth3'
+          ></motion.div>
           <Navigation loader={fadeOnLoadTop} />
         </div>
       </div>

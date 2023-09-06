@@ -14,10 +14,10 @@ const About = ({ switchProps }) => {
       </h2>
       <div className='wrapper w-5/6 flex flex-col xxs:gap-24 xs:gap-10 md:gap-0'>
         <p className='sm:w-10/12 mx-auto xs:my-4 sm:my-8 flex-grow  md:my-12 text-center sm:text-lg md:text-lg lg:text-2xl font-thin'>
-          Hi. My Name is Lennart Jansen from Hamburg. A have a background as an
-          Audio Engeneer. Recently i discovered my passion with programming and
-          web-development. After going the sel-taught route at first i decided
-          to join a WebDev Course at DCI in january this year.
+          Welcome friend! My Name is Lennart Jansen from Hamburg. A have a
+          background as an Audio Engeneer. Recently i discovered my passion with
+          programming and web-development. After going the sel-taught route at
+          first i decided to join a WebDev Course at DCI in january this year.
         </p>
         <div
           id='life'
