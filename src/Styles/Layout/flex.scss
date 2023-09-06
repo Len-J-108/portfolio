@@ -25,6 +25,13 @@
   border-top-right-radius: 300px;
 }
 
+.face-round {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-60%);
+}
+
 .item-content-right {
   width: 700px;
   order: 3;
