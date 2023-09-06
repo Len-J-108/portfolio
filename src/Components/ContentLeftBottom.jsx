@@ -12,9 +12,20 @@ const ContentLeftBottom = () => {
         <div className='text-black self-start absolute left-0 rounded-full border border-black w-16 h-16'>
           Photo
         </div>
-        <h5 className='fff-bodoni self-center text-2xl text-neutral-800'>
-          Frontend Developer
-        </h5>
+        <div
+          id='heading-name'
+          className='fff-bodoni self-center absolute left-6 bottom-40 '
+        >
+          <h5 className='text-3xl text-neutral-800'>Lennart</h5>
+          <h5 className='text-3xl text-neutral-800 relative left-10'>Jansen</h5>
+        </div>
+        <div id='heading-decrition' className='self-center relative top-20'>
+          <h5 className='fff-bodoni  text-2xl text-neutral-800'>Frontend</h5>
+          <h5 className='fff-bodoni  text-2xl text-neutral-800 relative left-10'>
+            Developer
+          </h5>
+        </div>
+
         <a href='https://github.com/Len-J-108' target='blank'>
           <VscGithub className='text-black text-3xl' />
         </a>
