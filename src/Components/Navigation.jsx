@@ -2,9 +2,15 @@ import { Link } from 'react-router-dom';
 import '../Styles/Layout/flex.scss';
 import Logo from './Logo';
 
-const Navigation = () => {
+import { motion } from 'framer-motion';
+
+
+const Navigation = ({loader}) => {
   return (
-    <nav
+    <motion.nav
+      variants={loader}
+      initial='initial'
+      animate='final'
       id='written-name'
       className='navigation flex flex-row lg:flex-col bg-neutral-800'
     >
@@ -27,7 +33,7 @@ const Navigation = () => {
       >
         Projects
       </Link>
-    </nav>
+    </motion.nav>
     
   );
 };

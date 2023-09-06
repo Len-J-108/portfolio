@@ -42,7 +42,7 @@ const RoutesAnimated = () => {
   };
 
   return (
-    <AnimatePresence>
+    // <AnimatePresence>
       <Routes location={location} key={location.key}>
         <Route path='/' element={<About switchProps={switchProps} />} />
         <Route
@@ -54,7 +54,7 @@ const RoutesAnimated = () => {
           element={<Projects switchProps={switchProps} />}
         />
       </Routes>
-    </AnimatePresence>
+    // </AnimatePresence>
   );
 };
 

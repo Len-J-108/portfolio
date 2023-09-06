@@ -4,16 +4,27 @@ import { VscGithub } from 'react-icons/vsc';
 import { SiLinkedin } from 'react-icons/si';
 import { BsDiscord } from 'react-icons/bs';
 
+import { motion } from 'framer-motion';
+
 import faceImage from '../Assets/images/faceRoundScaledDown.png';
 
-const ContentLeftBottom = () => {
+const ContentLeftBottom = ({ loader }) => {
   const twClassNames = ['hidden', 'lg:block', 'backdrop-blur-md'];
   return (
-    <div className={twClassNames.join(' ') + ' content-left-bottom'}>
+    <motion.div
+      variants={loader}
+      initial='initial'
+      animate='final'
+      className={twClassNames.join(' ') + ' content-left-bottom'}
+    >
       <div className='flex h-full justify-end items-end p-3 gap-3 relative'>
         {/* <div className='text-black self-start relative left-0 rounded-full border border-black w-16 h-16'>
           Photo */}
-          <img src={faceImage} alt="face" className="face-round w-32 h-32 object-cover border-4 border-red-900 drop-shadow rounded-full grayscale self-start" />
+        <img
+          src={faceImage}
+          alt='face'
+          className='face-round w-32 h-32 object-cover border-4 border-red-900 drop-shadow rounded-full grayscale self-start'
+        />
         {/* </div> */}
         <div
           id='heading-name'
@@ -39,7 +50,7 @@ const ContentLeftBottom = () => {
           <BsDiscord className='text-black text-3xl' />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
