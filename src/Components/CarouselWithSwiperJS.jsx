@@ -69,14 +69,14 @@ export default function CarouselWithSwiperJS() {
             alt='slide 5'
           />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img
             className={imageStyles.join(' ')}
             // src='https://cdn.pixabay.com/photo/2022/07/24/17/55/wind-energy-7342177__340.jpg'
             src={img6}
             alt='slide 6'
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <img
             className={imageStyles.join(' ')}

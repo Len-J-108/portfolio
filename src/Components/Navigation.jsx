@@ -8,19 +8,19 @@ const Navigation = () => {
       <Logo />
       <Link
         to='/'
-        className='m-auto hover:text-orange-400 hover: hover:border-orange-400 text-gray-200 py-2 px-4 border border-gray-400 rounded shadow bg-gray-800'
+        className='w-5/6  m-auto hover:text-orange-400 text-center hover: hover:border-orange-400 text-gray-200 py-2 px-4 border border-gray-400 rounded shadow bg-gray-800'
       >
         About
       </Link>
       <Link
         to='/abilities'
-        className='m-auto hover:text-orange-400 hover: hover:border-orange-400 text-gray-200  py-2 px-4 border border-gray-400 rounded shadow bg-gray-800'
+        className='w-5/6  m-auto hover:text-orange-400 text-center hover: hover:border-orange-400 text-gray-200  py-2 px-4 border border-gray-400 rounded shadow bg-gray-800'
       >
         Abilities
       </Link>
       <Link
         to='projects'
-        className='m-auto hover:text-orange-400 hover: hover:border-orange-400 text-gray-200 py-2 px-4 border border-gray-400 rounded shadow bg-gray-800'
+        className='w-5/6  m-auto hover:text-orange-400 text-center hover: hover:border-orange-400 text-gray-200 py-2 px-4 border border-gray-400 rounded shadow bg-gray-800'
       >
         Projects
       </Link>

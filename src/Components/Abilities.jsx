@@ -39,18 +39,17 @@ const Abilities = ({ switchProps }) => {
     >
       <h2>Abilities</h2>
       <h3>Front End</h3>
-
-      {abilitiesData.map(({ id, name }) => (
-        <div
-          className='ability-card w-2/6 flex gap-2 items-center justify-between'
-          key={id}
-        >
-          {/* <img src={img} alt={name} className='w-24' /> */}
-
-          <span>{name}</span>
-          <IoIosArrowDropdown className='w-24 text-3xl text-orange-400' />
-        </div>
-      ))}
+      <section className='flex flex-wrap gap-5 w-5/6 mx-auto justify-around'>
+        {abilitiesData.map(({ id, name, img }) => (
+          <div
+            key={id}
+            className='w-2/6 flex flex-row-reverse gap-4 justify-center items-center'
+          >
+            <span className='w-2/5'>{name}</span>
+            <img src={img} className='w-20' />
+          </div>
+        ))}
+      </section>
     </motion.div>
   );
 };
