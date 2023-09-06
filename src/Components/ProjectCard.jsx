@@ -6,13 +6,13 @@ const ProjectCard = ({ name, url, img, txt }) => {
   };
 
   return (
-    <div className='fff-baskerville card rounded-xl w-6/12 bg-neutral-400 text-neutral-800 my-10'>
+    <div className='fff-baskerville card rounded-xl xs:w-10/12 sm:w-8/12 md:w-6/12 bg-neutral-400 text-neutral-800 my-10'>
       <img
         src={img}
         alt='project one'
         className='card-img w-100 rounded-t-xl shadow-xl'
       />
-      <h3 className='text-center my-8'>{name}</h3>
+      <h3 className='text-center xs:my-6 md:my-8'>{name}</h3>
       <p className='fff-josephine text-center w-10/12  mx-auto'>{txt}</p>
       <a
         href={url}

@@ -31,7 +31,7 @@ const Projects = ({ switchProps }) => {
       // style={style}
       className='bg-neutral-800 w-full h-full rounded-lg flex items-center flex-col gap-6 overflow-y-scroll'
     >
-      <h1 className="fff-bodoni text-5xl my-10 pb-6  px-6 border-b-2 skew-x-6 skew-y-6">My Projects</h1>
+      <h1 className="fff-bodoni sm:text-2xl md:text-5xl lg:text-6xl my-10 pb-6  px-6 border-b-2 skew-x-6 skew-y-6">My Projects</h1>
       {projectData.map(({ id, name, url, txt, img }) => {
         return (
           <ProjectCard name={name} url={url} txt={txt} key={id} img={img} />

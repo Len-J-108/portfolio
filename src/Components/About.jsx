@@ -9,11 +9,11 @@ const About = ({ switchProps }) => {
       exit='exit'
       className='bg-neutral-800 w-full h-full rounded-lg flex items-center flex-col gap-6 overflow-y-scroll'
     >
-      <h2 className='fff-bodoni sm:text-xs md:text-5xl lg:text-6xl mt-10 pb-6  px-6 border-b-2 skew-x-6 skew-y-6'>
+      <h2 className='fff-bodoni sm:text-2xl md:text-5xl lg:text-6xl mt-10 pb-6 px-6 border-b-2 skew-x-6 skew-y-6'>
         About me
       </h2>
-      <div className='wrapper w-5/6'>
-        <p className='w-10/12 mx-auto my-12 text-center md:text-lg lg:text-2xl font-thin'>
+      <div className='wrapper w-5/6 flex flex-col xxs:gap-20 xs:gap-10 md:gap-0'>
+        <p className='w-10/12 mx-auto xs:my-4 sm:my-8  md:my-12 text-center xs:text-xs sm:text-lg md:text-lg lg:text-2xl font-thin'>
           Hi. My Name is Lennart Jansen from Hamburg. A have a background as an
           Audio Engeneer. Recently i discovered my passion with programming and
           web-development. After going the sel-taught route at first i decided
