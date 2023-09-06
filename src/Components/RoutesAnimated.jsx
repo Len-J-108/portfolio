@@ -10,7 +10,7 @@ const RoutesAnimated = () => {
   const switchProps = {
     initial: {
       opacity: 0,
-      y: -100,
+      y: -50,
       // width: '1px',
       transition: {
         duration: 0,
@@ -22,7 +22,9 @@ const RoutesAnimated = () => {
       y: 0,
       // width: '100%',
       transition: {
-        duration: 0.5,
+        type: 'spring',
+        stiffness: 300,
+        duration: 0.3,
         delay: 0.5,
         ease: 'easeOut',
       },
@@ -32,7 +34,7 @@ const RoutesAnimated = () => {
       // width: 0,
       // height: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.2,
         delay: 0,
         ease: 'easeOut',
       },

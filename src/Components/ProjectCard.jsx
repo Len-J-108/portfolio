@@ -6,19 +6,19 @@ const ProjectCard = ({ name, url, img, txt }) => {
   };
 
   return (
-    <div className='fff-baskerville card rounded-xl w-6/12 bg-neutral-400 text-neutral-800'>
+    <div className='fff-baskerville card rounded-xl w-6/12 bg-neutral-400 text-neutral-800 my-10'>
       <img
         src={img}
         alt='project one'
         className='card-img w-100 rounded-t-xl shadow-xl'
       />
-      <h3 className='text-center my-3'>{name}</h3>
-      <p className='fff-josephine text-center'>{txt}</p>
+      <h3 className='text-center my-8'>{name}</h3>
+      <p className='fff-josephine text-center w-10/12  mx-auto'>{txt}</p>
       <a
         href={url}
         target='blank'
         className='relative inline-flex items-center justify-center px-5 
-         py-1 mx-4 my-3 overflow-hidden font-medium text-indigo-600 transition
+         py-1 mx-8 my-8 overflow-hidden font-medium text-indigo-600 transition
           duration-300 ease-out rounded-full shadow-xl group hover:ring-1
            hover:ring-purple-500 '
       >

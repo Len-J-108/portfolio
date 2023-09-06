@@ -9,8 +9,8 @@ const About = ({ switchProps }) => {
       exit='exit'
       className='bg-neutral-800 w-full h-full rounded-lg flex items-center flex-col gap-6 overflow-y-scroll'
     >
-      <h2>About me:</h2>
-      <div className='wrapper border-t-2 w-4/6'>
+      <h2 className="fff-bodoni text-5xl mt-10 pb-6  px-6 border-b-2 skew-x-6 skew-y-6">About me</h2>
+      <div className='wrapper w-4/6'>
         <p className='w-10/12 mx-5 my-12 text-center'>
           Hi. My Name is Lennart Jansen from Hamburg. A have a background as an
           Audio Engeneer. Recently i discovered my passion with programming and
