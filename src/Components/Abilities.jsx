@@ -10,7 +10,7 @@ import tailwindLogo from '../Assets/images/abilities/tailwind.svg';
 import uiuxLogo from '../Assets/images/abilities/uiux.svg';
 import responsibleLogo from '../Assets/images/abilities/responsible.jpg';
 
-import { IoIosCheckmark, IoIosArrowDropdown } from 'react-icons/io';
+import { IoIosArrowDropdown } from 'react-icons/io';
 
 const Abilities = ({ switchProps }) => {
   const abilitiesData = [
@@ -22,7 +22,11 @@ const Abilities = ({ switchProps }) => {
     { id: 5, name: 'Git', img: gitLogo },
     { id: 6, name: 'Tailwind', img: tailwindLogo },
     { id: 7, name: 'UI / UX', img: uiuxLogo },
-    { id: 8, name: 'Responsible Design', img: responsibleLogo },
+    {
+      id: 8,
+      name: 'Responsible Design',
+      img: responsibleLogo,
+    },
   ];
 
   return (
@@ -31,15 +35,20 @@ const Abilities = ({ switchProps }) => {
       initial='initial'
       animate='final'
       exit='exit'
-      className='bg-neutral-800 w-full h-full rounded-lg flex items-center flex-col gap-12 overflow-y-scroll'
+      className='bg-neutral-800 w-full h-full rounded-lg flex items-start flex-col gap-4 overflow-y-scroll'
     >
       <h2>Abilities</h2>
-      {abilitiesData.map(({ id, name, img }) => (
-        <div className='ability-card w-3/6 flex gap-5 items-center justify-between' key={id}>
+      <h3>Front End</h3>
+
+      {abilitiesData.map(({ id, name }) => (
+        <div
+          className='ability-card w-2/6 flex gap-2 items-center justify-between'
+          key={id}
+        >
+          {/* <img src={img} alt={name} className='w-24' /> */}
+
           <span>{name}</span>
-          <img src={img} alt={name} className='w-24' />
-          {/* <IoIosCheckmark /> */}
-          <IoIosArrowDropdown className="w-24 text-5xl text-orange-400" />
+          <IoIosArrowDropdown className='w-24 text-3xl text-orange-400' />
         </div>
       ))}
     </motion.div>

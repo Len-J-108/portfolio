@@ -10,7 +10,7 @@ const Navigation = () => {
         to='/'
         className='m-auto hover:text-orange-400 hover: hover:border-orange-400 text-gray-200 py-2 px-4 border border-gray-400 rounded shadow bg-gray-800'
       >
-        TestOne
+        About
       </Link>
       <Link
         to='/abilities'
