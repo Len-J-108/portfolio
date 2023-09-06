@@ -39,7 +39,7 @@ const Abilities = ({ switchProps }) => {
     >
       <h2 className='fff-bodoni sm:text-2xl md:text-5xl lg:text-6xl my-10 mx-auto pb-6  px-6 border-b-2 skew-x-6 skew-y-6'>Abilities</h2>
       {/* <h3>Front End</h3> */}
-      <section className='flex flex-wrap gap-5 w-5/6 mx-auto justify-around'>
+      <section className='flex xxs:flex-col xxs:items-center sm:flex-row sm:flex-wrap gap-10 w-5/6 mx-auto justify-around'>
         {abilitiesData.map(({ id, name, img }) => (
           <div
             key={id}

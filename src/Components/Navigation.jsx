@@ -4,7 +4,10 @@ import Logo from './Logo';
 
 const Navigation = () => {
   return (
-    <nav className='navigation flex flex-row lg:flex-col bg-neutral-800'>
+    <nav
+      id='written-name'
+      className='navigation flex flex-row lg:flex-col bg-neutral-800'
+    >
       <Logo />
       <Link
         to='/'
@@ -25,6 +28,7 @@ const Navigation = () => {
         Projects
       </Link>
     </nav>
+    
   );
 };
 

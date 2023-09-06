@@ -6,7 +6,7 @@ const ProjectCard = ({ name, url, img, txt }) => {
   };
 
   return (
-    <div className='fff-baskerville card rounded-xl xs:w-10/12 sm:w-8/12 md:w-6/12 bg-neutral-400 text-neutral-800 my-10'>
+    <div className='fff-baskerville card rounded-xl xxs:w-10/12 sm:w-8/12 md:w-6/12 bg-neutral-400 text-neutral-800 my-10'>
       <img
         src={img}
         alt='project one'
