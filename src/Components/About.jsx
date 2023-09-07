@@ -16,7 +16,7 @@ const About = ({ switchProps }) => {
         <p className='sm:w-10/12 mx-auto xs:my-4 sm:my-8 flex-grow  md:my-12 text-center sm:text-lg md:text-lg lg:text-2xl font-thin'>
           Welcome friend! My Name is Lennart Jansen from Hamburg. A have a
           background as an Audio Engeneer. Recently i discovered my passion with
-          programming and web-development. After going the sel-taught route at
+          programming and web-development. After going the self-taught route at
           first i decided to join a WebDev Course at DCI in january this year.
         </p>
         <div
