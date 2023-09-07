@@ -1,11 +1,25 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import '../Styles/Layout/flex.scss';
 import Logo from './Logo';
 
 import { motion } from 'framer-motion';
 
+const Navigation = ({ loader }) => {
+  const navLinkStyles = [
+    'w-5/6',
+    'm-auto',
+    'hover:text-orange-400',
+    'text-center',
+    'hover:border-orange-400',
+    'text-gray-200',
+    'py-2',
+    'border',
+    'border-gray-400',
+    'rounded',
+    'shadow',
+    'bg-inherit',
+  ];
 
-const Navigation = ({loader}) => {
   return (
     <motion.nav
       variants={loader}
@@ -15,26 +29,37 @@ const Navigation = ({loader}) => {
       className='navigation flex flex-row lg:flex-col bg-neutral-800'
     >
       <Logo />
-      <Link
+      <NavLink
         to='/about'
-        className='w-5/6  m-auto hover:text-orange-400 text-center hover: hover:border-orange-400 text-gray-200 py-2 border border-gray-400 rounded shadow bg-inherit'
+        className={({ isActive }) =>
+          isActive
+            ? navLinkStyles.join(' ') + ' border-green-500'
+            : navLinkStyles.join(' ')
+        }
       >
         About
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to='/abilities'
-        className='w-5/6  m-auto hover:text-orange-400 text-center hover: hover:border-orange-400 text-gray-200 py-2 border border-gray-400 rounded shadow bg-inherit'
+        className={({ isActive }) =>
+          isActive
+            ? navLinkStyles.join(' ') + ' border-green-500'
+            : navLinkStyles.join(' ')
+        }
       >
         Abilities
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to='projects'
-        className='w-5/6  m-auto hover:text-orange-400 text-center hover: hover:border-orange-400 text-gray-200 py-2 border border-gray-400 rounded shadow bg-inherit'
+        className={({ isActive }) =>
+          isActive
+            ? navLinkStyles.join(' ') + ' border-green-500'
+            : navLinkStyles.join(' ')
+        }
       >
         Projects
-      </Link>
+      </NavLink>
     </motion.nav>
-    
   );
 };
 
