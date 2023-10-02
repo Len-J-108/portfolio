@@ -1,16 +1,17 @@
 import { motion } from 'framer-motion';
 
-import css3Logo from '../Assets/images/abilities/css3.svg.png';
-import html5Logo from '../Assets/images/abilities/html5.png';
+import css3Logo from '../Assets/images/abilities/CSS3_logo.svg.png';
+import html5Logo from '../Assets/images/abilities/1200px-HTML5_Badge.svg.png';
 import jsLogo from '../Assets/images/abilities/js.png';
 import reactLogo from '../Assets/images/abilities/react.svg.png';
 import bootstrapLogo from '../Assets/images/abilities/bootstrap.svg.png';
 import gitLogo from '../Assets/images/abilities/git.svg.png';
 import tailwindLogo from '../Assets/images/abilities/tailwind.svg';
 import uiuxLogo from '../Assets/images/abilities/uiux.svg';
-import responsibleLogo from '../Assets/images/abilities/responsible.jpg';
+import responsiveLogo from '../Assets/images/abilities/smartphone-1184883_640.png';
+import nodeLogo from '../Assets/images/abilities/nodejsLogo.png';
 
-import { IoIosArrowDropdown } from 'react-icons/io';
+// import { IoIosArrowDropdown } from 'react-icons/io';
 
 const Abilities = ({ switchProps }) => {
   const abilitiesData = [
@@ -24,9 +25,10 @@ const Abilities = ({ switchProps }) => {
     { id: 7, name: 'UI / UX', img: uiuxLogo },
     {
       id: 8,
-      name: 'Responsible Design',
-      img: responsibleLogo,
+      name: 'Responsive Design',
+      img: responsiveLogo,
     },
+    {id: 8, name: 'NODE JS', img: nodeLogo}
   ];
 
   return (
@@ -46,7 +48,7 @@ const Abilities = ({ switchProps }) => {
             className='w-2/6 flex flex-row-reverse gap-4 justify-center items-center'
           >
             <span className='w-2/5'>{name}</span>
-            <img src={img} className='w-20' />
+            <img src={img} className='w-20 saturate-50' />
           </div>
         ))}
       </section>
