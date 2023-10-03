@@ -5,8 +5,9 @@ import { SiLinkedin } from 'react-icons/si';
 import { BsDiscord } from 'react-icons/bs';
 
 import { motion } from 'framer-motion';
+import Face from './Face';
 
-import faceImage from '../Assets/images/faceRoundScaledDown.png';
+// import faceImage from '../Assets/images/faceRoundScaledDown.png';
 
 const ContentLeftBottom = ({ loader }) => {
   const twClassNames = ['hidden', 'xl:block', 'backdrop-blur-md'];
@@ -18,13 +19,14 @@ const ContentLeftBottom = ({ loader }) => {
       className={twClassNames.join(' ') + ' content-left-bottom'}
     >
       <div className='flex h-full justify-end items-end p-3 gap-3 relative'>
+        <Face/>
         {/* <div className='text-black self-start relative left-0 rounded-full border border-black w-16 h-16'>
           Photo */}
-        <img
+        {/* <img
           src={faceImage}
           alt='face'
           className='face-round w-32 h-32 object-cover border-4 border-red-900 drop-shadow rounded-full grayscale self-start'
-        />
+        /> */}
         {/* </div> */}
         <div
           id='heading-name'
