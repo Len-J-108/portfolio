@@ -18,6 +18,8 @@ const Navigation = ({ loader }) => {
     'rounded',
     'shadow',
     'bg-inherit',
+    'active:scale-110',
+    'transition-transform'
   ];
 
   return (

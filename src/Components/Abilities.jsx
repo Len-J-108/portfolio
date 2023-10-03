@@ -48,7 +48,7 @@ const Abilities = ({ switchProps }) => {
             className='w-2/6 flex flex-row-reverse gap-4 justify-center items-center'
           >
             <span className='w-2/5'>{name}</span>
-            <img src={img} className='w-20 saturate-50' />
+            <img src={img} className='w-14 saturate-50' />
           </div>
         ))}
       </section>
