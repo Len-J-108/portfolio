@@ -45,7 +45,8 @@ const RoutesAnimated = () => {
   return (
     // <AnimatePresence>
     <Routes location={location} key={location.key}>
-      <Route path='/' element={<GreenStart switchProps={switchProps} />} />
+      {/* <Route path='/' element={<GreenStart switchProps={switchProps} />} /> */}
+      <Route path='/' element={<About switchProps={switchProps} />} />
       <Route path='/about' element={<About switchProps={switchProps} />} />
       <Route
         path='/abilities'

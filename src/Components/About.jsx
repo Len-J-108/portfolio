@@ -32,7 +32,7 @@ const About = ({ switchProps }) => {
             <span className='font-thin '>
               Startet learning on{' '}
               <a
-                href='https://www.freecodecamp.org/'
+                href='https://www.freecodecamp.org/LennartJansen'
                 className='font-bold text-green-500'
               >
                 FreeCodeCamp{' '}

@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 import faceImage from '../Assets/images/faceRoundScaledDown.png';
 
 const ContentLeftBottom = ({ loader }) => {
-  const twClassNames = ['hidden', 'lg:block', 'backdrop-blur-md'];
+  const twClassNames = ['hidden', 'xl:block', 'backdrop-blur-md'];
   return (
     <motion.div
       variants={loader}

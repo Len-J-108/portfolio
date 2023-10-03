@@ -42,13 +42,13 @@ function App() {
         ease: 'easeOut',
       },
     },
-  };
+  }; 
 
   return (
     <AnimatePresence>
       <div className='w-screen h-screen flex justify-center items-center'>
         <div className='content-container flex relative'>
-          <div className='depth1'></div>
+          <div className='depth1 hidden xl:block'></div>
           <CarouselWithSwiperJS loader={fadeOnLoadTop} />
           <ContentLeftBottom loader={fadeOnLoadLeft} />
           <ContentRight />
