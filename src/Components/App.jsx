@@ -8,8 +8,7 @@ import '../Styles/Layout/flex.scss';
 import { AnimatePresence } from 'framer-motion';
 
 import { motion } from 'framer-motion';
-
-//      https://classy-cocada-ce059a.netlify.app/
+import ParticleA from './ParticleA';
 
 function App() {
   const fadeOnLoadLeft = {
@@ -42,11 +41,12 @@ function App() {
         ease: 'easeOut',
       },
     },
-  }; 
+  };
 
   return (
     <AnimatePresence>
       <div className='w-screen h-screen flex justify-center items-center'>
+        <ParticleA />
         <div className='content-container flex relative'>
           <div className='depth1 hidden xl:block'></div>
           <CarouselWithSwiperJS loader={fadeOnLoadTop} />
