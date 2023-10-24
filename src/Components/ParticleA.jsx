@@ -18,18 +18,18 @@ const ParticlesA = () => {
       options={{
         fullScreen: {
           enable: true,
-          zIndex: 1,
+          zIndex: 0,
         },
         particles: {
           number: {
-            value: 80,
+            value: 10,
             density: {
               enable: true,
-              value_area: 800,
+              value_area: 500,
             },
           },
           color: {
-            value: '#ffffff',
+            value: '#FFFB00FF',
           },
           shape: {
             type: 'circle',
@@ -70,7 +70,7 @@ const ParticlesA = () => {
           },
           move: {
             enable: true,
-            speed: .27,
+            speed: 0.27,
             direction: 'none',
             random: false,
             straight: false,
@@ -134,4 +134,3 @@ const ParticlesA = () => {
 };
 
 export default ParticlesA;
-
