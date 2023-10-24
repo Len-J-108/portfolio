@@ -4,7 +4,7 @@ import CarouselWithSwiperJS from './CarouselWithSwiperJS';
 import ContentRight from './ContentRight';
 import Navigation from './Navigation';
 import '../Styles/Layout/flex.scss';
-// jojojo
+
 import { AnimatePresence } from 'framer-motion';
 
 import { motion } from 'framer-motion';
