@@ -1,6 +1,7 @@
 .content-container {
   height: 600px;
   gap: 9px;
+  backdrop-filter: blur(5px);
   // align-items: stretch;
 }
 

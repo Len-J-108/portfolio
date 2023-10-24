@@ -4,7 +4,7 @@ import RoutesAnimated from './RoutesAnimated';
 
 const ContentRight = () => {
   return (
-    <div className="item-content-right">
+    <div className="item-content-right border-2 border-neutral-600">
       <LocationProvider>
         <RoutesAnimated />
       </LocationProvider>

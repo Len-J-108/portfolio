@@ -19,7 +19,7 @@ const Navigation = ({ loader }) => {
     'shadow',
     'bg-inherit',
     'active:scale-110',
-    'transition-transform'
+    'transition-transform',
   ];
 
   return (
@@ -28,7 +28,7 @@ const Navigation = ({ loader }) => {
       initial='initial'
       animate='final'
       id='written-name'
-      className='navigation flex flex-row lg:flex-col bg-neutral-800'
+      className='navigation flex flex-row lg:flex-col bg-neutral-800 border-2 border-neutral-600'
     >
       <Logo />
       <NavLink

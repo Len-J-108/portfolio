@@ -25,17 +25,17 @@ const ParticlesA = () => {
             value: 10,
             density: {
               enable: true,
-              value_area: 500,
+              value_area: 250,
             },
           },
           color: {
             value: '#FFFB00FF',
           },
           shape: {
-            type: 'circle',
+            type: '<>',
             stroke: {
               width: 0,
-              color: '#000000',
+              color: '#FFFB00FF',
             },
             polygon: {
               nb_sides: 5,
@@ -46,25 +46,25 @@ const ParticlesA = () => {
             random: false,
             anim: {
               enable: false,
-              speed: 1,
+              speed: .27,
               opacity_min: 0.1,
               sync: false,
             },
           },
           size: {
-            value: 3,
+            value: 9,
             random: true,
             anim: {
               enable: false,
-              speed: 40,
+              speed: 20,
               size_min: 0.1,
               sync: false,
             },
           },
           line_linked: {
             enable: true,
-            distance: 150,
-            color: '#ffffff',
+            distance: 200,
+            color: '#FFFB00FF',
             opacity: 0.4,
             width: 1,
           },
@@ -76,7 +76,7 @@ const ParticlesA = () => {
             straight: false,
             out_mode: 'out',
             attract: {
-              enable: false,
+              enable: true,
               rotateX: 600,
               rotateY: 1200,
             },
@@ -97,20 +97,20 @@ const ParticlesA = () => {
           },
           modes: {
             grab: {
-              distance: 400,
+              distance: 100,
               line_linked: {
                 opacity: 1,
               },
             },
             bubble: {
-              distance: 400,
+              distance: 100,
               size: 40,
               duration: 2,
               opacity: 8,
               speed: 1,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
             },
             push: {
               particles_nb: 4,
