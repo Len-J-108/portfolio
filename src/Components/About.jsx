@@ -14,10 +14,16 @@ const About = ({ switchProps }) => {
       </h2>
       <div className='wrapper w-5/6 flex flex-col xxs:gap-24 xs:gap-10 md:gap-0'>
         <p className='sm:w-10/12 mx-auto xs:my-4 sm:my-8 flex-grow  md:my-12 text-center sm:text-lg md:text-lg lg:text-2xl font-thin'>
-          Welcome friend! My Name is Lennart Jansen from Hamburg. A have a
-          background as an Audio Engeneer. Recently i discovered my passion with
-          programming and web-development. After going the self-taught route at
-          first i decided to join a WebDev Course at DCI in january this year.
+          Hello! I'm Lennart, a passionate web developer currently studying
+          development and programming at Digital Career Institute (DCI). With a
+          unique background in audio engineering, I bring a creative and
+          innovative approach to solving problems and building engaging web
+          applications. Before embarking on my journey into web development, I
+          worked as an audio engineer, where I honed my skills in sound design,
+          recording, and production. My passion for technology and desire to
+          create led me to explore the world of coding and development, where I
+          discovered my love for building web applications. ## Current Studies
+          at DCI
         </p>
         <div
           id='life'
