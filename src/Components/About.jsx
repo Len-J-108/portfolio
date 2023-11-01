@@ -22,8 +22,7 @@ const About = ({ switchProps }) => {
           worked as an audio engineer, where I honed my skills in sound design,
           recording, and production. My passion for technology and desire to
           create led me to explore the world of coding and development, where I
-          discovered my love for building web applications. ## Current Studies
-          at DCI
+          discovered my love for building web applications.
         </p>
         <div
           id='life'
