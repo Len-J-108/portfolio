@@ -19,7 +19,7 @@ const ContentLeftBottom = ({ loader }) => {
       className={twClassNames.join(' ') + ' content-left-bottom'}
     >
       <div className='flex h-full justify-end items-end p-3 gap-3 relative'>
-        <Face/>
+        <Face />
         {/* <div className='text-black self-start relative left-0 rounded-full border border-black w-16 h-16'>
           Photo */}
         {/* <img
@@ -45,7 +45,7 @@ const ContentLeftBottom = ({ loader }) => {
         <a href='https://github.com/Len-J-108' target='blank'>
           <VscGithub className='text-black text-3xl' />
         </a>
-        <a href='https://github.com/Len-J-108' target='blank'>
+        <a href='https://www.linkedin.com/in/len-jansen/' target='blank'>
           <SiLinkedin className='text-black text-3xl' />
         </a>
         <a href='https://discord.gg/e5gvx2DB' target='blank'>
