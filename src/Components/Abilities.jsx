@@ -10,6 +10,8 @@ import tailwindLogo from '../Assets/images/abilities/tailwind.svg';
 import uiuxLogo from '../Assets/images/abilities/uiux.svg';
 import responsiveLogo from '../Assets/images/abilities/smartphone-1184883_640.png';
 import nodeLogo from '../Assets/images/abilities/nodejsLogo.png';
+import expressLogo from '../Assets/images/abilities/expressjs.svg';
+import mongoDbLogo from '../Assets/images/abilities/mongodb.png';
 
 // import { IoIosArrowDropdown } from 'react-icons/io';
 
@@ -28,7 +30,9 @@ const Abilities = ({ switchProps }) => {
       name: 'Responsive Design',
       img: responsiveLogo,
     },
-    {id: 8, name: 'NODE JS', img: nodeLogo}
+    {id: 8, name: 'NODE JS', img: nodeLogo},
+    { id: 9, name: 'Express.js', img: expressLogo },
+    { id: 10, name: 'MongoDB', img: mongoDbLogo },
   ];
 
   return (
@@ -41,7 +45,7 @@ const Abilities = ({ switchProps }) => {
     >
       <h2 className='fff-bodoni sm:text-2xl md:text-5xl lg:text-6xl my-10 mx-auto pb-6  px-6 border-b-2 skew-x-6 skew-y-6'>Abilities</h2>
       {/* <h3>Front End</h3> */}
-      <section className='flex xxs:flex-col xxs:items-center sm:flex-row sm:flex-wrap gap-10 w-5/6 mx-auto justify-around'>
+      <section className='flex xxs:flex-col xxs:items-center sm:flex-row sm:flex-wrap gap-10 w-5/6 mx-auto py-10 justify-around'>
         {abilitiesData.map(({ id, name, img }) => (
           <div
             key={id}
