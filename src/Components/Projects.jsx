@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 import img1 from '../Assets/images/cardOneImgSmall.png';
 import img2 from '../Assets/images/cardTwoImgSmall.png';
+import img3 from '../Assets/images/five.png';
 import '../Styles/Typo/Fonts.scss';
 
 const Projects = ({ switchProps }) => {
@@ -20,6 +21,13 @@ const Projects = ({ switchProps }) => {
       txt: 'First Project for my Course,  a page for a alpacca-farm using only HTML & CSS...',
       img: img1,
     },
+    {
+      id: 3,
+      name: 'Rock-Paper-Scissor CLI',
+      url: 'https://github.com/Len-J-108/RockPaperScissorsCLI',
+      txt: 'CLI game of "Rock Paper Scissors" to be played in the terminal...',
+      img: img3,
+    },
   ];
 
   return (
@@ -32,7 +40,7 @@ const Projects = ({ switchProps }) => {
       className='bg-neutral-800 w-full h-full rounded-lg flex items-center flex-col gap-6 overflow-y-scroll'
     >
       <h1 className="fff-bodoni sm:text-2xl md:text-5xl lg:text-6xl my-10 pb-6  px-6 border-b-2 skew-x-6 skew-y-6">My Projects</h1>
-      {projectData.map(({ id, name, url, txt, img }) => {
+      {projectData.reverse().map(({ id, name, url, txt, img }) => {
         return (
           <ProjectCard name={name} url={url} txt={txt} key={id} img={img} />
         );
