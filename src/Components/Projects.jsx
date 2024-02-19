@@ -9,17 +9,17 @@ const Projects = ({ switchProps }) => {
   const projectData = [
     {
       id: 1,
-      name: 'Github Profile Viewer',
-      url: 'https://len-j-108.github.io/ghProfileViewer/',
-      txt: 'Small project using the Github-Api to view your GH profile...',
-      img: img2,
-    },
-    {
-      id: 2,
       name: 'Happy Alpaca Page',
       url: 'https://len-j-108.github.io/tha-site/',
       txt: 'First Project for my Course,  a page for a alpacca-farm using only HTML & CSS...',
       img: img1,
+    },
+    {
+      id: 2,
+      name: 'Github Profile Viewer',
+      url: 'https://len-j-108.github.io/ghProfileViewer/',
+      txt: 'Small project using the Github-Api to view your GH profile...',
+      img: img2,
     },
     {
       id: 3,
