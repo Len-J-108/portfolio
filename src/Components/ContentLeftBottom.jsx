@@ -36,7 +36,7 @@ const ContentLeftBottom = ({ loader }) => {
           <h5 className='text-3xl text-neutral-800 relative left-10'>Jansen</h5>
         </div>
         <div id='heading-decrition' className='self-center relative top-14'>
-          <h5 className='fff-bodoni  text-2xl text-neutral-800'>Frontend</h5>
+          <h5 className='fff-bodoni  text-2xl text-neutral-800'>Fullstack</h5>
           <h5 className='fff-bodoni  text-2xl text-neutral-800 relative left-10'>
             Developer
           </h5>

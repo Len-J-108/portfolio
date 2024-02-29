@@ -3,6 +3,7 @@ import ProjectCard from './ProjectCard';
 import img1 from '../Assets/images/cardOneImgSmall.png';
 import img2 from '../Assets/images/cardTwoImgSmall.png';
 import img3 from '../Assets/images/five.png';
+import img4 from '../Assets/images/quizapp.png';
 import '../Styles/Typo/Fonts.scss';
 
 const Projects = ({ switchProps }) => {
@@ -27,6 +28,13 @@ const Projects = ({ switchProps }) => {
       url: 'https://github.com/Len-J-108/RockPaperScissorsCLI',
       txt: 'CLI game of "Rock Paper Scissors" to be played in the terminal...',
       img: img3,
+    },
+    {
+      id: 4,
+      name: 'Quiz App',
+      url: 'https://github.com/Len-J-108/QuizappClient',
+      txt: 'A Quiz to test your common knowledge...',
+      img: img4,
     },
   ];
 
