@@ -1,21 +1,22 @@
 import { motion } from 'framer-motion';
-
 import css3Logo from '../Assets/images/abilities/CSS3_logo.svg.png';
 import html5Logo from '../Assets/images/abilities/1200px-HTML5_Badge.svg.png';
 import jsLogo from '../Assets/images/abilities/js.png';
 import reactLogo from '../Assets/images/abilities/react.svg.png';
 import bootstrapLogo from '../Assets/images/abilities/bootstrap.svg.png';
-import gitLogo from '../Assets/images/abilities/git.svg.png';
+import gitLogo from '../Assets/images/abilities/git.png';
 import tailwindLogo from '../Assets/images/abilities/tailwind.svg';
 import uiuxLogo from '../Assets/images/abilities/uiux.svg';
-import responsiveLogo from '../Assets/images/abilities/smartphone-1184883_640.png';
+import responsiveLogo from '../Assets/images/abilities/responsive.png';
 import nodeLogo from '../Assets/images/abilities/nodejsLogo.png';
 import expressLogo from '../Assets/images/abilities/expressjs.svg';
-import mongoDbLogo from '../Assets/images/abilities/mongodb.png';
+import mongoDbLogo from '../Assets/images/abilities/mongodb.svg';
 
 // import { IoIosArrowDropdown } from 'react-icons/io';
 
 const Abilities = ({ switchProps }) => {
+
+
   const abilitiesData = [
     { id: 0, name: 'CSS3', img: css3Logo },
     { id: 1, name: 'HTML5', img: html5Logo },
@@ -30,9 +31,9 @@ const Abilities = ({ switchProps }) => {
       name: 'Responsive Design',
       img: responsiveLogo,
     },
-    {id: 8, name: 'NODE JS', img: nodeLogo},
-    { id: 9, name: 'Express.js', img: expressLogo },
-    { id: 10, name: 'MongoDB', img: mongoDbLogo },
+    {id: 9, name: 'NODE JS', img: nodeLogo},
+    { id: 10, name: 'Express.js', img: expressLogo },
+    { id: 11, name: 'MongoDB', img: mongoDbLogo },
   ];
 
   return (
@@ -49,10 +50,16 @@ const Abilities = ({ switchProps }) => {
         {abilitiesData.map(({ id, name, img }) => (
           <div
             key={id}
-            className='w-2/6 flex flex-row-reverse gap-4 justify-center items-center'
+            className='w-full mt-40 border-b border-neutral-600 pb-10'
           >
-            <span className='w-2/5'>{name}</span>
-            <img src={img} className='w-14 saturate-50' />
+            <motion.div 
+              initial={{opacity: 0, scale:0}}
+              whileInView={{opacity: 1, scale:1, transition: {duration: .5}}}
+              className='w-full flex flex-col-reverse gap-12 justify-start items-center'
+              >
+            <h3 className='w-2/5 text-center text-2xl tracking-wide'>{name}</h3>
+              <img src={img} className='w-1/5 saturate-30 m-auto' />
+             </motion.div>
           </div>
         ))}
       </section>
