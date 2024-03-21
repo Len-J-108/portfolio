@@ -14,7 +14,7 @@ const Abilities = ({ switchProps }) => {
       className='bg-neutral-800 w-full h-full rounded-lg flex items-start flex-col gap-4 overflow-y-scroll'
     >
       <section className='flex xxs:flex-col xxs:items-center sm:flex-row sm:flex-wrap gap-10 w-5/6 mx-auto py-10 justify-around'>
-      <HeadingTwo txt="Abilities" />
+      <HeadingTwo txt="Tech-Stack" />
         {abilitiesData.map(({ id, name, img }) => (
           <div
             key={id}
