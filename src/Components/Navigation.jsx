@@ -4,6 +4,8 @@ import Logo from './Logo';
 
 import { motion } from 'framer-motion';
 
+const navs = ['about', 'contact', 'abilities', 'projects'];
+
 const Navigation = ({ loader }) => {
   const navLinkStyles = [
     'w-5/6',
@@ -28,39 +30,22 @@ const Navigation = ({ loader }) => {
       initial='initial'
       animate='final'
       id='written-name'
-      className='navigation flex flex-row lg:flex-col bg-neutral-800 border-2 border-neutral-600'
-    >
+      className='navigation flex flex-row lg:flex-col bg-neutral-800 border-2 border-neutral-600'>
       <Logo />
-      <NavLink
-        to='/about'
-        className={({ isActive }) =>
-          isActive
-            ? navLinkStyles.join(' ') + ' border-green-500'
-            : navLinkStyles.join(' ')
-        }
-      >
-        About
-      </NavLink>
-      <NavLink
-        to='/abilities'
-        className={({ isActive }) =>
-          isActive
-            ? navLinkStyles.join(' ') + ' border-green-500'
-            : navLinkStyles.join(' ')
-        }
-      >
-        Abilities
-      </NavLink>
-      <NavLink
-        to='projects'
-        className={({ isActive }) =>
-          isActive
-            ? navLinkStyles.join(' ') + ' border-green-500'
-            : navLinkStyles.join(' ')
-        }
-      >
-        Projects
-      </NavLink>
+      {navs.map((item, i)=> {
+        return (
+          <NavLink
+            key={i}
+            to={`/${item}`}
+            className={({ isActive }) =>
+              isActive
+                ? navLinkStyles.join(' ') + ' border-green-500'
+                : navLinkStyles.join(' ')
+            }>
+            {item[0].toUpperCase() + item.slice(1)}
+          </NavLink>
+        )
+      })}
     </motion.nav>
   );
 };

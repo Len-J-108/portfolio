@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import AbilitySingle from '../Styles/Components/AbilitySingle';
 import abilitiesData from '../utils/abilitiesData';
+import HeadingTwo from './HeadingTwo';
 
 const Abilities = ({ switchProps }) => {
 
@@ -12,8 +13,8 @@ const Abilities = ({ switchProps }) => {
       exit='exit'
       className='bg-neutral-800 w-full h-full rounded-lg flex items-start flex-col gap-4 overflow-y-scroll'
     >
-      <h2 className='fff-bodoni sm:text-2xl md:text-5xl lg:text-6xl my-10 mx-auto pb-6  px-6 border-b-2 skew-x-6 skew-y-6'>Abilities</h2>
       <section className='flex xxs:flex-col xxs:items-center sm:flex-row sm:flex-wrap gap-10 w-5/6 mx-auto py-10 justify-around'>
+      <HeadingTwo txt="Abilities" />
         {abilitiesData.map(({ id, name, img }) => (
           <div
             key={id}

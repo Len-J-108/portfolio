@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import HeadingTwo from './HeadingTwo';
 
 const About = ({ switchProps }) => {
   return (
@@ -9,9 +10,7 @@ const About = ({ switchProps }) => {
       exit='exit'
       className='bg-neutral-800 w-full h-full rounded-lg flex items-center flex-col gap-6 overflow-y-scroll'
     >
-      <h2 className='fff-bodoni sm:text-2xl md:text-5xl lg:text-6xl mt-10 pb-6 px-6 border-b-2 skew-x-6 skew-y-6'>
-        About me
-      </h2>
+      <HeadingTwo txt="About me" />
       <div className='wrapper w-5/6 flex flex-col xxs:gap-24 xs:gap-10 md:gap-0'>
         <p className='sm:w-10/12 mx-auto xs:my-4 sm:my-8 flex-grow  md:my-12 text-center sm:text-lg md:text-lg lg:text-2xl font-thin'>
           Hello! I'm Lennart, a passionate web developer currently studying

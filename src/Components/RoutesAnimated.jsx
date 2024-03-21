@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import Abilities from './Abilities';
 import About from './About';
 import GreenStart from './GreenStart';
+import Contact from './Contact';
 
 const RoutesAnimated = () => {
   const location = useLocation();
@@ -48,6 +49,7 @@ const RoutesAnimated = () => {
       {/* <Route path='/' element={<GreenStart switchProps={switchProps} />} /> */}
       <Route path='/' element={<About switchProps={switchProps} />} />
       <Route path='/about' element={<About switchProps={switchProps} />} />
+      <Route path='/contact' element={<Contact switchProps={switchProps} />} />
       <Route
         path='/abilities'
         element={<Abilities switchProps={switchProps} />}
