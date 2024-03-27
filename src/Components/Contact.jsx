@@ -1,5 +1,6 @@
 import {motion} from 'framer-motion';
 import cl from '../Styles/Components/contacts.module.scss';
+import '../Styles/Utility/utils.scss';
 
 const Contact = ({switchProps }) => {
 // uses Daisy UI
@@ -9,8 +10,8 @@ const Contact = ({switchProps }) => {
       initial='initial'
       animate='final'
       exit='exit'
-      className="bg-neutral-800 h-full flex justify-center" >
-      <div className='bg-neutral-800 p-5'>
+      className="bg-blurry bg-neutral-800 h-full flex justify-center" >
+      <div className='p-5'>
         <p className="my-10 text-center text-2xl" >Feel free to reach out to me...</p>
         <form 
           action="https://api.web3forms.com/submit" 

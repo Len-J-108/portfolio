@@ -10,23 +10,25 @@ import responsiveLogo from '../Assets/images/abilities/responsive.png';
 import nodeLogo from '../Assets/images/abilities/nodejsLogo.png';
 import expressLogo from '../Assets/images/abilities/expressjs.svg';
 import mongoDbLogo from '../Assets/images/abilities/mongodb.svg';
+import tsLogo from  '../Assets/images/abilities/tsLogo.png';
 
 const abilitiesData = [
   { id: 0, name: 'CSS3', img: css3Logo },
   { id: 1, name: 'HTML5', img: html5Logo },
   { id: 2, name: 'Javascript', img: jsLogo },
-  { id: 3, name: 'React', img: reactLogo },
-  { id: 4, name: 'Bootstrap', img: bootstrapLogo },
-  { id: 5, name: 'Tailwind', img: tailwindLogo },
-  { id: 6, name: 'Git', img: gitLogo },
+  { id: 3, name: 'Typescript', img: tsLogo },
+  { id: 4, name: 'React', img: reactLogo },
+  { id: 5, name: 'Bootstrap', img: bootstrapLogo },
+  { id: 6, name: 'Tailwind', img: tailwindLogo },
+  { id: 7, name: 'Git', img: gitLogo },
   {
-    id: 8,
+    id: 9,
     name: 'Responsive Design',
     img: responsiveLogo,
   },
-  {id: 9, name: 'NODE JS', img: nodeLogo},
-  { id: 10, name: 'Express.js', img: expressLogo },
-  { id: 11, name: 'MongoDB', img: mongoDbLogo },
+  {id: 10, name: 'NODE JS', img: nodeLogo},
+  { id: 11, name: 'Express.js', img: expressLogo },
+  { id: 12, name: 'MongoDB', img: mongoDbLogo },
 ];
 
 export default abilitiesData;
