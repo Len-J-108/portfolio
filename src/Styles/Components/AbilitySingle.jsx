@@ -1,9 +1,9 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer'; 
 import { useEffect } from 'react';
+import '../../Styles/Utility/utils.scss';
 
-
-const AbilitySingle = ({img, name}) => {
+const AbilitySingle = ({img, name, id}) => {
 
   const control = useAnimation();
   const {ref, inView} = useInView();
@@ -25,10 +25,15 @@ const AbilitySingle = ({img, name}) => {
     variants={scrollVariant}
     initial="hidden"
     animate={control}
-      className='w-full flex flex-col-reverse gap-12 justify-start items-center'
+      className='w-full flex flex-col justify-between gap-12 justify-start items-center h-96'
       >
-    <h3 className='w-2/5 text-center text-2xl tracking-wide'>{name}</h3>
-      <img src={img} className='w-1/5 saturate-30 m-auto' />
+      <h3 className='w-2/5 text-center text-2xl tracking-wide'>{name}</h3>
+      <div className="flex flex-col justify-center items-center">
+        <img src={img} className='w-1/5 saturate-30 ' />
+        <div className="blurrer">
+          <div className={`spotlight spotlight-clr-${id}`}></div>
+        </div>
+      </div>
      </motion.div>
   )
 }

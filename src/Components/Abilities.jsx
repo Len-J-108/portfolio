@@ -18,8 +18,8 @@ const Abilities = ({ switchProps }) => {
         {abilitiesData.map(({ id, name, img }) => (
           <div
             key={id}
-            className='w-full mt-40 border-b border-neutral-600 pb-10'>
-              <AbilitySingle img={img} name={name} />
+            className='w-full border-b border-neutral-600 h-fit py-10'>
+              <AbilitySingle img={img} name={name} id={id} />
           </div>
         ))}
       </section>
