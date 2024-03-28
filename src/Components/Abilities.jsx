@@ -15,11 +15,11 @@ const Abilities = ({ switchProps }) => {
     >
       <section className='flex xxs:flex-col xxs:items-center sm:flex-row sm:flex-wrap gap-10 w-5/6 mx-auto py-10 justify-around'>
       <HeadingTwo txt="Tech-Stack" />
-        {abilitiesData.map(({ id, name, img }) => (
+        {abilitiesData.map(({ id, name, img, txt }) => (
           <div
             key={id}
-            className='w-full border-b border-neutral-600 h-fit py-10'>
-              <AbilitySingle img={img} name={name} id={id} />
+            className='w-full border-b border-neutral-600 h-fit'>
+              <AbilitySingle img={img} name={name} id={id} txt={txt}/>
           </div>
         ))}
       </section>

@@ -1,19 +1,11 @@
-// $clr: (
-//   "yellow": hsla(51, 100%, 70%, 1),
-//   "blue": hsla(200, 90%, 59%, 1),
-//   "purple": hsla(260, 97%, 62%, 1),
-//   "green": hsla(90, 100%, 61%, 1),
-//   "red": hsla(3, 100%, 68%, 1),
-//   "orange": hsla(44, 100%, 59%, 1),
-// );
-
-// $clr: #ff6347, #00ffff, #ffd700, #ff69b4, #008000, #00ced1;
-$clr: hsla(51, 100%, 70%, 1), hsla(200, 90%, 59%, 1), hsla(260, 97%, 62%, 1), hsla(90, 100%, 61%, 1), hsla(3, 100%, 68%, 1), hsla(44, 100%, 59%, 1);
-
-@function random-color() {
-  $random-index: random(length($clr));
-  @return nth($clr, $random-index);
-}
+$clr: (
+  yellow: hsla(51, 100%, 70%, 1),
+  blue: hsla(200, 90%, 59%, 1),
+  purple: hsla(260, 97%, 62%, 1),
+  green: hsla(90, 100%, 61%, 1),
+  red: hsla(3, 100%, 68%, 1),
+  orange: hsla(44, 100%, 59%, 1),
+);
 
 .bg-blurry {
   background-image: url("../../Assets/images/bbblurry2.svg");
@@ -31,7 +23,9 @@ $clr: hsla(51, 100%, 70%, 1), hsla(200, 90%, 59%, 1), hsla(260, 97%, 62%, 1), hs
   justify-content: center;
   align-items: center;
   filter: blur(27px);
-  transform: skewY(25deg);
+  position: relative;
+  top: -20px;
+  // transform: skewY(25deg);
   .spotlight {
     z-index: 1;
     width: 100%;
@@ -41,44 +35,33 @@ $clr: hsla(51, 100%, 70%, 1), hsla(200, 90%, 59%, 1), hsla(260, 97%, 62%, 1), hs
     border-radius: 30px;
   }
   .spotlight-clr-0 {
-    background-image: radial-gradient(circle, hsla(51, 100%, 70%, 1) 13%, hsla(51, 100%, 70%, 0) 46%);
+    background-image: radial-gradient(circle, map-get($clr, yellow) 13%, hsla(51, 100%, 70%, 0) 46%);
   }
   .spotlight-clr-1 {
-    background-image: radial-gradient(circle, random-color() 13%, hsla(51, 100%, 70%, 0) 46%);
+    background-image: radial-gradient(circle, map-get($clr, blue) 13%, hsla(51, 100%, 70%, 0) 46%);
   }
   .spotlight-clr-2 {
-    background-image: radial-gradient(circle, random-color() 13%, hsla(51, 100%, 70%, 0) 46%);
+    background-image: radial-gradient(circle, map-get($clr, purple) 13%, hsla(51, 100%, 70%, 0) 46%);
   }
   .spotlight-clr-3 {
-    background-image: radial-gradient(circle, random-color() 13%, hsla(51, 100%, 70%, 0) 46%);
+    background-image: radial-gradient(circle, map-get($clr, green) 13%, hsla(51, 100%, 70%, 0) 46%);
   }
   .spotlight-clr-4 {
-    background-image: radial-gradient(circle, random-color() 13%, hsla(51, 100%, 70%, 0) 46%);
+    background-image: radial-gradient(circle, map-get($clr, red) 13%, hsla(51, 100%, 70%, 0) 46%);
   }
   .spotlight-clr-5 {
-    background-image: radial-gradient(circle, random-color() 13%, hsla(51, 100%, 70%, 0) 46%);
+    background-image: radial-gradient(circle, map-get($clr, orange) 13%, hsla(51, 100%, 70%, 0) 46%);
   }
-  .spotlight-clr-6 {
-    background-image: radial-gradient(circle, random-color() 13%, hsla(51, 100%, 70%, 0) 46%);
+  .spotlight-shape-0 {
+    transform: skewY(25deg);
   }
-  .spotlight-clr-7 {
-    background-image: radial-gradient(circle, random-color() 13%, hsla(51, 100%, 70%, 0) 46%);
+  .spotlight-clr1 {
+    transform: skewY(8deg);
   }
-  .spotlight-clr-8 {
-    background-image: radial-gradient(circle, random-color() 13%, hsla(51, 100%, 70%, 0) 46%);
+  .spotlight-clr-2 {
+    transform: skewY(-15deg);
   }
-  .spotlight-clr-9 {
-    background-image: radial-gradient(circle, random-color() 13%, hsla(51, 100%, 70%, 0) 46%);
+  .spotlight-clr-3 {
+    transform: skewY(-31deg);
   }
-  .spotlight-clr-10 {
-    background-image: radial-gradient(circle, random-color() 13%, hsla(51, 100%, 70%, 0) 46%);
-  }
-  .spotlight-clr-11 {
-    background-image: radial-gradient(circle, random-color() 13%, hsla(51, 100%, 70%, 0) 46%);
-  }
-  .spotlight-clr-12 {
-    background-image: radial-gradient(circle, random-color() 13%, hsla(51, 100%, 70%, 0) 46%);
-  }
-
-
 }
