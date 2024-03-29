@@ -18,11 +18,6 @@ const AbilitySingle = ({img, name, id, txt}) => {
     else control.start("hidden");
   }, [control, inView])
 
-  // useEffect(() => {
-  //   console.log('here', txt);
-  // }, [])
-
-
   return (
     <motion.div 
     ref={ref}
@@ -31,9 +26,9 @@ const AbilitySingle = ({img, name, id, txt}) => {
     animate={control}
       className='w-full flex flex-col justify-between gap-12 items-center h-fit pb-10'
       >
-      <h3 className='w-2/5 text-center text-2xl tracking-wide'>{name}</h3>
-      <p className="w-3/6 text-center text-amber-200 font-light relative bottom-6">{txt}</p>
-      <div className="flex flex-col justify-center items-center">
+      <h3 className='w-2/5 text-center text-2xl tracking-widest'>{name}</h3>
+      <p className="w-3/6 text-center text-amber-200 font-light italic tracking-wide relative bottom-6">{txt}</p>
+      <div className="flex flex-col justify-end items-center">
         <img src={img} className='w-1/5 saturate-30 z-10' />
         <div className="blurrer">
           <div className={`spotlight spotlight-clr-${getRandomInt(6)} spotlight-shape-${getRandomInt(4)}`}></div>
